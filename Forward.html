@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+<!-- Formatting -->
+<html>
+	<html lang= "en">
+	<head>
+		<meta charset="utf-8">
+		<meta name ="viewport" content="width=device width, initial-scale=1, shrink-to-fit=no">
+<!-- STYLIZATION -->
+		<link href= "css/stylization.css" type="text/css" rel="stylesheet">
+		<title>Forward an Order.</title>	
+	</head>
+<body>
+<!-- Header -->
+<div class="header">
+  <a href="index.html" class="homepage">Xiamen City Medical Insurance</a>
+<!-- Page Links -->
+  <div class="header-link">
+			<a href="About.html">About</a>
+			<a href="Log-In.html">Log-In</a>
+			<a href="Operating Hours.html">Operating Hours</a>
+			<a href="Appointment.html">Schedule an Appointment</a>
+			<a href="Procedures.html">Medical Services</a>
+			<a href="Forward.html">Forward an Order</a>
+			<a href="Reviews.html">Reviews</a>
+	</div>
+</div>
+<!-- Body -->
+<div class="body">
+	<section>
+		<h2>Pharmaceutical Order Forwarding</h2>
+	<form onsubmit="alert('You have successfully forwarded your order from ' + hospital.value +' to '+pharmacy.value+'\n\nPlease pick it up on ' + pickupDay.value + ' at any time from ' + time.value)">
+		<!-- Dropdown menu for selecting a particular hospital-->
+		<label for="hospital">Select your hospital:</label>
+		<select name="Hospital" id="hospital" required>
+			<option value ="">--Select an option--</option>
+    	  		<option value="Xiamen General Hospital">Xiamen General Hospital</option>
+      			<option value="Xiamen Central Hospital">Xiamen Central Hospital</option>
+  		</select>
+
+  		<br><br>
+
+  		<!-- Dropdown menu for selecting a particular pharmacy-->
+  		<label for="pharmacy">Select a pharmacy to forward your order to:</label>
+		<select name="Pharmacy" id="pharmacy" required>
+			<option value ="">--Select an option--</option>
+    	  		<option value="Xiamen General Pharmacy">Xiamen General Pharmacy</option>
+      			<option value="Xiamen Central Pharmacy">Xiamen Central Pharmacy</option>
+  		</select>
+
+  			<br><br>
+
+  		<!--Calendar for selecting a pickup date -->
+  		<label for="star">Select a pickup date:</label>
+  		<input type="date" id="pickupDay" name="Date" required>
+
+  			<br><br>
+
+  		<label for="time">Select a timeframe to pick up your order:</label>
+		<select name="Time" id="time" required>
+			<option value ="">--Select a Time--</option>
+			<option value="8:00 a.m. - 8:30 a.m.">8:00 a.m. - 8:30 a.m.</option>
+			<option value="8:30 a.m. - 9:00 a.m.">8:30 a.m. - 9:00 a.m.</option>
+			<option value="9:00 a.m. - 9:30 a.m.">9:00 a.m. - 9:30 a.m.</option>
+			<option value="9:30 a.m. - 10:00 a.m.">9:30 a.m. - 10:00 a.m.</option>
+			<option value="10:00 a.m. - 10:30 a.m.">10:00 a.m. - 10:30 a.m.</option>
+			<option value="10:30 a.m. - 11:00 a.m.">10:30 a.m. - 11:00 a.m.</option>
+			<option value="11:00 a.m. - 11:30 a.m.">11:00 a.m. - 11:30 a.m.</option>
+			<option value="11:30 a.m. - 12:00 p.m.">11:30 a.m. - 12:00 p.m.</option>
+			<option value="12:00 p.m. - 12:30 p.m.">12:00 p.m. - 12:30 p.m.</option>
+			<option value="12:30 p.m. - 1:00 p.m.">12:30 p.m. - 1:00 p.m.</option>
+			<option value="1:00 p.m. - 1:30 p.m.">1:00 p.m. - 1:30 p.m.</option>
+			<option value="1:30 p.m. - 2:00 p.m.">1:30 p.m. - 2:00 p.m.</option>
+			<option value="2:00 p.m. - 2:30 p.m.">2:00 p.m. - 2:30 p.m.</option>
+			<option value="2:30 p.m. - 3:00 p.m.">2:30 p.m. - 3:00 p.m.</option>
+			<option value="3:00 p.m. - 3:30 p.m.">3:00 p.m. - 3:30 p.m.</option>
+			<option value="3:30 p.m. - 4:00 p.m.">3:30 p.m. - 4:00 p.m.</option>
+			<option value="4:00 p.m. - 4:30 p.m.">4:00 p.m. - 4:30 p.m.</option>
+			<option value="4:30 p.m. - 5:00 p.m.">4:30 p.m. - 5:00 p.m.</option>
+			<option value="5:00 p.m. - 5:30 p.m.">5:00 p.m. - 5:30 p.m.</option>
+			<option value="5:30 p.m. - 6:00 p.m.">5:30 p.m. - 6:00 p.m.</option>
+			<option value="6:00 p.m. - 6:30 p.m.">6:00 p.m. - 6:30 p.m.</option>
+			<option value="6:30 p.m. - 7:00 p.m.">6:30 p.m. - 7:00 p.m.</option>
+			<option value="7:00 p.m. - 7:30 p.m.">7:00 p.m. - 7:30 p.m.</option>
+			<option value="7:30 p.m. - 8:00 p.m.">7:30 p.m. - 8:00 p.m.</option>
+    	</select>
+
+  		<br><br>
+
+  		<!--Entering a prescription order receipt-->
+  		<label for="receipt"><b>Prescription Receipt:</b></label>
+		<input type="text" placeholder="Enter a receipt number" name="receipt" required>
+
+  		<button type="submit">Submit</button>
+  		</form>
+
+		</section>	
+	</div>								
+</body>
+</html>
