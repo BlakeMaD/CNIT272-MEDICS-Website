@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+<!-- Formatting -->
+<html>
+	<html lang= "en">
+	<head>
+		<meta charset="utf-8">
+		<meta name ="viewport" content="width=device width, initial-scale=1, shrink-to-fit=no">
+<!-- STYLIZATION -->
+		<link href= "css/stylization.css" type="text/css" rel="stylesheet">
+		<title>Payment Processing.</title>	
+	</head>
+<body>
+<!-- Header -->
+<div class="header">
+  <a href="index.html" class="homepage">Xiamen City Medical Insurance</a>
+<!-- Page Links -->
+  <div class="header-link">
+			<a href="Refund.html">Refund</a>
+			<a href="Appointment.html">Schedule an Appointment</a>
+			<a href="Procedures.html">Medical Services</a>
+			<a href="Forward.html">Forward an Order</a>
+			<a href="Reviews.html">Reviews</a>
+	</div>
+</div>
+<!-- Body -->
+<div class="body">
+	<section>
+		<h2>Payment Processing</h2>
+	<form onsubmit="alert('Your payment has been successfully processed. \n\nReturning to the medical records page.')" action="Medical Records.html">
+		<!-- Dropdown menu for selecting a card type-->
+
+		<b>Current outstanding fees:</b>			$650
+
+			<br><br>
+
+		<label for="card"><b>Credit card type:</b></label>
+		<select name="Card" id="card" required>
+			<option value ="">--Select an option--</option>
+    	  		<option value="Visa">Visa</option>
+      			<option value="Mastercard">Mastercard</option>
+      			<option value="American Express">American Express</option>
+      			<option value="Discover">Discover</option>
+  		</select>
+
+  		<br><br>
+
+  		<!-- Entering a name-->
+  		<label for="name"><b>Name on Card:</b></label>
+		<input type="text" placeholder="Name" name="name" required>
+
+  			<br><br>
+
+  		<!--Entering a card number -->
+  		<label for="cardNum"><b>Credit Card Number:</b></label>
+		<input type="cardNum" placeholder="Card Number" name="cardNum" required>
+
+  			<br><br>
+
+  		<!--Entering an expiration month -->
+  		<label for="month"><b>Expiration Month:</b></label>
+  		<select name="Expiration Month" id="month" required>
+			<option value ="">Month</option>
+    	  		<option value="January">January</option>
+      			<option value="February">February</option>
+      			<option value="March">March</option>
+      			<option value="April">April</option>
+      			<option value="May">May</option>
+      			<option value="June">June</option>
+      			<option value="July">July</option>
+      			<option value="August">August</option>
+      			<option value="September">September</option>
+      			<option value="October">October</option>
+      			<option value="November">November</option>
+      			<option value="December">December</option>
+  		</select>
+
+  		<!--Entering an expiration year -->
+  		<label for="year"><b>Expiration Year:</b></label>
+  		<select name="Experimation Year" id="year" required>
+			<option value ="">Year</option>
+    	  		<option value="2020">2020</option>
+      			<option value="2021">2021</option>
+      			<option value="2022">2022</option>
+      			<option value="2023">2023</option>
+      			<option value="2024">2024</option>
+      			<option value="2025">2025</option>
+      			<option value="2026">2026</option>
+      			<option value="2027">2027</option>
+      			<option value="2028">2028</option>
+      			<option value="2029">2029</option>
+      			<option value="2030">2030</option>
+  		</select>
+
+  			<br><br>
+
+  		<!--Entering a CVV-->
+  		<label for="CVV"><b>CVV:</b></label>
+		<input type="CVV" placeholder="CVV" name="CVV" required>
+
+  		<button type="submit">Submit</button>
+  		</form>
+
+		</section>	
+	</div>								
+</body>
+</html>
