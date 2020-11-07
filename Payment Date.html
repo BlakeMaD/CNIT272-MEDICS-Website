@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+<!-- Formatting -->
+<html>
+  <html lang= "en">
+  <head>
+    <meta charset="utf-8">
+    <meta name ="viewport" content="width=device width, initial-scale=1, shrink-to-fit=no">
+<!-- STYLIZATION -->
+    <link href= "css/stylization.css" type="text/css" rel="stylesheet">
+    <title>Fee Payment</title>  
+  </head>
+<body>
+<!-- Header -->
+<div class="header">
+  <a href="index.html" class="homepage">Xiamen City Medical Insurance</a>
+<!-- Page Links -->
+  <div class="header-link">
+      <a href="Refund.html">Refund</a>
+      <a href="Appointment.html">Schedule an Appointment</a>
+      <a href="Procedures.html">Medical Services</a>
+      <a href="Forward.html">Forward an Order</a>
+      <a href="Reviews.html">Reviews</a>
+  </div>
+</div>
+<!-- Body -->
+<div class="body">
+  <section>
+  <form onsubmit="alert('Making payment for the appointment on ' + date.value)" action="Payment.html">
+    <h2>Medical Records</h2>
+      
+
+    <table>
+     <tr>
+        <th>RecordID</th>
+        <th>Diagnosis</th>
+        <th>Treatment</th>
+        <th>Date</th>
+
+      </tr>
+      <tr>
+        <td>000000001</td>
+        <td>Strep throat</td>
+        <td>Penicillin</td>
+        <td>10-20-2018</td>
+  
+      </tr>
+      <tr>
+        <td>000000002</td>
+        <td>Flu</td>
+        <td>Tamiflu</td>
+        <td>11-3-2019</td>
+      
+      </tr>
+      <tr>
+        <td>000000003</td>
+        <td>Common cold</td>
+        <td>Over the counter medicine for cold/flu</td>
+        <td>12-5-2019</td>
+        
+      </tr>
+    </table>  
+
+    <br>
+
+    <!-- Dropdown menu for selecting a date-->
+    <label for="date">Select a date to make a payment for:</label>
+    <select name="Date" id="date" required>
+      <option value ="">--Select an option--</option>
+            <option value="11-03-2019">11-03-2019</option>
+            <option value="12-05-2019">12-05-2019</option>
+      </select>
+
+      <br><br>
+
+      <button type="submit" onclick="window.location.href='Payment.html'">Continue</button>
+
+      </form>
+
+    </section>  
+  </div>       
+</body>
+</html>
+
