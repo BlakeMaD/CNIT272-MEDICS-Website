@@ -1,28 +1,46 @@
 <!DOCTYPE HTML>
+<!-- Formatting -->
 <html>
- <html lang= "en">
- <head>
- <meta charset="utf-8">
- <meta name ="viewport" content="width=device width, initial-scale=1, shrink-to-fit=no">
- <link href= "Stylization.css" type="text/css" rel="stylesheet">
- <title>Deregister and Clear Account</title>
- </head>
+	<html lang= "en">
+	<head>
+		<meta charset="utf-8">
+		<meta name ="viewport" content="width=device width, initial-scale=1, shrink-to-fit=no">
+<!-- STYLIZATION -->
+		<link href= "Stylization.css" type="text/css" rel="stylesheet">
+		<title>Refund</title>	
+	</head>
 <body>
-<div>
- <a href="index.html">Xiamen City Medical Insurance</a>
- <div>
- <a href="About.html">About</a>
- <a href="Log-In.html">Log-In</a>
- <a href="DeregisterandClearAccount.html">DeregisterandClearAccount</a>
- <a href="Procedures.html">Medical Services</a>
- <a href="Reviews.html">Reviews</a>
- </div>
+<!-- Header -->
+<div class="header">
+  <a href="index.html" class="homepage">Xiamen City Medical Insurance</a>
+<!-- Page Links -->
+  <div class="header-link">
+			<a href="About.html">About</a>
+			<a href="Log-In.html">Log-In</a>
+			<a href="Procedures.html">Medical Services</a>
+			<a href="Reviews.html">Reviews</a>
+	</div>
 </div>
-<div>
- <section>
- <h2>Deregister and Clear Account</h2>
- <p>Please wait while we clear and deregister your account</p>
- </section>
- </div>
+<!-- Body -->
+<div class="body">
+			<section>
+				<h2>Deregistration</h2>
+				<button onclick="refund()">Deregister Account</button>
+
+				<p id="process_info"></p>
+
+				<script>
+				function deregister() {
+				  var txt;
+				  var r = confirm("Are you sure?\nPress OK to deregister account.");
+				  if (r == true) {
+				  	alert("Your account is deregistered");
+				    txt = "Accounts can take up to 48 hours to deregister";
+				  }
+				  document.getElementById("process_info").innerHTML = txt;
+				}
+				</script>
+			</section>
+	</div>			
 </body>
 </html>
