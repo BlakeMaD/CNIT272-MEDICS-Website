@@ -1,46 +1,49 @@
 <!DOCTYPE HTML>
 <!-- Formatting -->
 <html>
-	<html lang= "en">
-	<head>
-		<meta charset="utf-8">
-		<meta name ="viewport" content="width=device width, initial-scale=1, shrink-to-fit=no">
-<!-- STYLIZATION -->
-		<link href= "Stylization.css" type="text/css" rel="stylesheet">
-		<title>Refund</title>	
-	</head>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device width, initial-scale=1, shrink-to-fit=no">
+	<!-- STYLIZATION -->
+	<link href="Stylization.css" type="text/css" rel="stylesheet">
+	<title>Refund</title>
+</head>
+
 <body>
-<!-- Header -->
-<div class="header">
-  <a href="index.html" class="homepage">Xiamen City Medical Insurance</a>
-<!-- Page Links -->
-  <div class="header-link">
+	<!-- Header -->
+	<div class="header">
+		<a href="index.html" class="homepage">Xiamen City Medical Insurance</a>
+		<!-- Page Links -->
+		<div class="header-link">
 			<a href="About.html">About</a>
 			<a href="Log-In.html">Log-In</a>
 			<a href="Procedures.html">Medical Services</a>
 			<a href="Reviews.html">Reviews</a>
+		</div>
 	</div>
-</div>
-<!-- Body -->
-<div class="body">
-			<section>
-				<h2>Refund</h2>
-				<button onclick="refund()">Process Refund</button>
+	<!-- Body -->
+	<div class="body">
+		<section>
+			<h2>Refund</h2>
+			<button onclick="refund()">Process Refund</button>
 
-				<p id="process_info"></p>
+			<p id="process_info"></p>
 
-				<script>
+			<script>
 				function refund() {
-				  var txt;
-				  var r = confirm("Are you sure?\nPress OK to process refund.");
-				  if (r == true) {
-				  	alert("Your Refund is being processed by our staff");
-				    txt = "Refunds can take up to 48 hours to process";
-				  }
-				  document.getElementById("process_info").innerHTML = txt;
+					var txt;
+					var r = confirm("Are you sure?\nPress OK to process refund.");
+					if (r == true) {
+						alert("Your Refund is being processed by our staff");
+						txt = "Refunds can take up to 48 hours to process";
+					}
+					document.getElementById("process_info").innerHTML = txt;
 				}
-				</script>
-			</section>
-	</div>			
+			</script>
+		</section>
+	</div>
 </body>
+
 </html>

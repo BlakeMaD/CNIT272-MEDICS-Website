@@ -2,43 +2,46 @@
 <html>
 <!-- Formatting -->
 <html>
-	<html lang= "en">
-	<head>
-		<meta charset="utf-8">
-		<meta name ="viewport" content="width=device width, initial-scale=1, shrink-to-fit=no">
-<!-- STYLIZATION -->
-		<link href= "Stylization.css" type="text/css" rel="stylesheet">
-		<title>Schedule an appointment.</title>	
-	</head>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device width, initial-scale=1, shrink-to-fit=no">
+	<!-- STYLIZATION -->
+	<link href="Stylization.css" type="text/css" rel="stylesheet">
+	<title>Schedule an appointment.</title>
+</head>
+
 <body>
 	<!-- Header -->
 	<div class="header">
-	  <a href="index.html" class="homepage">Xiamen City Medical Insurance - Home Page</a>
-	<!-- Page Links -->
-	    <div class="header-link">
-				<a href="Reviews.html">Reviews</a>
-	    </div>
+		<a href="index.html" class="homepage">Xiamen City Medical Insurance - Home Page</a>
+		<!-- Page Links -->
+		<div class="header-link">
+			<a href="Reviews.html">Reviews</a>
+		</div>
 	</div>
 	<!-- Body -->
 	<div class="body">
-			
+
 		<h2>Transactions</h2>
 		<form action="ExampleTransaction.html">
-	  		<!--Calendar for selecting an appointment date, should add more restrictions on date selection later -->
-	  		<label for="start">Select a transaction date:</label>
-	  		<input type="date" id="start" name="Date" required>
+			<!--Calendar for selecting an appointment date, should add more restrictions on date selection later -->
+			<label for="start">Select a transaction date:</label>
+			<input type="date" id="start" name="Date" required>
 
-	  			<br><br>
-	  		<label for="time">Sort Method:</label>
-	  		<select name="Time" id="time">
-			<option value ="">--Completion Time--</option>
-			<option value="TransactionID">InvoiceID</option>
-    		</select>
+			<br><br>
+			<label for="time">Sort Method:</label>
+			<select name="Time" id="time">
+				<option value="">--Completion Time--</option>
+				<option value="TransactionID">InvoiceID</option>
+			</select>
 
-				<br><br>
+			<br><br>
 
-	  		<button type="submit">Search</button>
-	  	</form>
-	</div>								
+			<button type="submit">Search</button>
+		</form>
+	</div>
 </body>
+
 </html>

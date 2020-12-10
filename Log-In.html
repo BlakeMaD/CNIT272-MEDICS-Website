@@ -2,20 +2,22 @@
 <html>
 <!-- Formatting -->
 <html>
-	<html lang= "en">
-	<head>
-		<meta charset="utf-8">
-		<meta name ="viewport" content="width=device width, initial-scale=1, shrink-to-fit=no">
-<!-- STYLIZATION -->
-		<link href= "Stylization.css" type="text/css" rel="stylesheet">
-		<title>Log-In</title>	
-	</head>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device width, initial-scale=1, shrink-to-fit=no">
+	<!-- STYLIZATION -->
+	<link href="Stylization.css" type="text/css" rel="stylesheet">
+	<title>Log-In</title>
+</head>
+
 <body>
-<!-- Header -->
-<div class="header">
-  <a href="index.html" class="homepage">Xiamen City Medical Insurance</a>
-<!-- Page Links -->
-  <div class="header-link">
+	<!-- Header -->
+	<div class="header">
+		<a href="index.html" class="homepage">Xiamen City Medical Insurance</a>
+		<!-- Page Links -->
+		<div class="header-link">
 			<a href="About.html">About</a>
 			<a href="Log-In.html">Log-In</a>
 			<a href="Operating Hours.html">Operating Hours</a>
@@ -23,54 +25,55 @@
 				<a href="Appointment.html">Book an Appointment</a>-->
 			<a href="Procedures.html">Medical Services</a>
 			<a href="Reviews.html">Reviews</a>
+		</div>
 	</div>
-</div>
-<!-- Body -->
-		<div class="body">		
-			<h2>Patient Portal</h2>
-			<form action="Medical Records.html">
-				<label for="user"><b>Username:</b></label>
-				<input type="text" placeholder="Enter Username" name="user" required>
+	<!-- Body -->
+	<div class="body">
+		<h2>Patient Portal</h2>
+		<form action="Medical Records.html">
+			<label for="user"><b>Username:</b></label>
+			<input type="text" placeholder="Enter Username" name="user" required>
 
-				<label for="pass"><b>Password:</b></label>
-				<input type="password" placeholder="Enter Password" name="pass" required> 
+			<label for="pass"><b>Password:</b></label>
+			<input type="password" placeholder="Enter Password" name="pass" required>
 
-				<button type="submit">Login</button>
-				<label><input type="checkbox" checked="checked" name="remember"> Remember me</label>
+			<button type="submit">Login</button>
+			<label><input type="checkbox" checked="checked" name="remember"> Remember me</label>
 
+			<div>
+				<br>
+				<button onclick="window.location.href='Register Account.html'">Register</button>
+				&nbsp;
+				<button onclick="window.location.href='Forget Password.html'">Forgot password?</button>
 				<div>
 					<br>
-					<button onclick="window.location.href='Register Account.html'">Register</button>
-					&nbsp;
-					<button onclick="window.location.href='Forget Password.html'">Forgot password?</button>
-					<div>
-						<br>
-						<button onclick="window.location.href='index.html'">Cancel</button>
-					</div>
+					<button onclick="window.location.href='index.html'">Cancel</button>
 				</div>
-		    </form>
+			</div>
+		</form>
 
-		    <h2>Hospital Portal</h2>
-			<form action="Medical Portal.html">
-				<label for="user"><b>Username:</b></label>
-				<input type="text" placeholder="Enter Username" name="user" required>
+		<h2>Hospital Portal</h2>
+		<form action="Medical Portal.html">
+			<label for="user"><b>Username:</b></label>
+			<input type="text" placeholder="Enter Username" name="user" required>
 
-				<label for="pass"><b>Password:</b></label>
-				<input type="password" placeholder="Enter Password" name="pass" required> 
+			<label for="pass"><b>Password:</b></label>
+			<input type="password" placeholder="Enter Password" name="pass" required>
 
-				<button type="submit">Login</button>
-			</form>
-			
-		  <h2>Insurance Bureau Portal</h2>
-			<form action="Insurance Bureau Portal.html">
-				<label for="user"><b>Username:</b></label>
-				<input type="text" placeholder="Enter Username" name="user" required>
+			<button type="submit">Login</button>
+		</form>
 
-				<label for="pass"><b>Password:</b></label>
-				<input type="password" placeholder="Enter Password" name="pass" required> 
+		<h2>Insurance Bureau Portal</h2>
+		<form action="Insurance Bureau Portal.html">
+			<label for="user"><b>Username:</b></label>
+			<input type="text" placeholder="Enter Username" name="user" required>
 
-				<button type="submit">Login</button>
-			</form>
+			<label for="pass"><b>Password:</b></label>
+			<input type="password" placeholder="Enter Password" name="pass" required>
+
+			<button type="submit">Login</button>
+		</form>
 	</div>
 </body>
+
 </html>
